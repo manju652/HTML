@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> CSS combinatory  selector examples </title>
+        <!.... Internal CSS to demonstrate various selectors...>
+            <style>
+                /*descendent selctor */
+                . container  p{
+                    color:blue;
+                }
+                /* child  selector */
+                . container >p{
+                    font-weight:bold;
+                }
+                /*adjacent sibling  selector */
+                h2+p {
+                    color:green;
+                }
+                /*group seletor */
+                h1,h2,h3{
+                    color:green;
+                }
+                /*general sibling  selector */
+                h2~p{
+                  font-size:14px;
+                }
+                </style>
+                </head>
+<body>
+    <div class="container"
+        <P>This paragraph is a descendent container styled using the descendent  selector </p>
+        <div >
+      <p> this paragraph is a descendent of container but not a direct child,so only the color is applied</p>
+        </div>
+        <p> this paragraph is a direct child  of container and is styled using both the descendent and child selector</p>
+        </div>
+        <h2>This heading is an adjacent sibling example</h2>
+    <p>This paragraph is an adjacent sibling to the h2 and is styled using the adjacent sibling selector</p>
+    <p>This paragraph is also a sibling of the h2 but is not immedetly adjacent,so only the general sibling seletor applied</p>
+</body>
+</html>
