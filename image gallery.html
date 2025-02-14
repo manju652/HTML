@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial 
+scale=1.0">
+ <title>Image Gallery</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ color: #333;
+ text-align: center;
+ margin: 20px;
+ }
+ h1 {
+ color: #333;
+ }
+ .gallery {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+ .gallery-item {
+ margin: 10px;
+ }
+ .gallery-item img {
+ width: 100px;
+ height: 100px;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: transform 0.3s;
+ }
+ .gallery-item img:hover {
+ transform: scale(1.1);
+ }
+ </style>
+</head>
+<body>
+ <h1>Image Gallery</h1>
+ <div class="gallery">
+ <div class="gallery-item">
+ <a href="C:\Users\ADMIN\Desktop\idly.jpg" target="_blank">
+ <img src="idly.jpg" alt="Image 1">
+ </a>
+ </div>
+ <div class="gallery-item">
+ <a href="C:\Users\ADMIN\Desktop\dosa.jpg" target="_blank">
+ <img src="dosa.jpg" alt="Image 2">
+ </a>
+ </div>
+ <div class="gallery-item">
+ <a href="C:\Users\ADMIN\Desktop\veg-noodles.jpg" target="_blank">
+ <img src="veg-noodles.jpg" alt="Image 3">
+ </a>
+ </div>
+ <div class="gallery-item">
+ <a href="C:\Users\ADMIN\Desktop\Ice_cream.jpg" target="_blank">
+ <img src="Ice_cream.jpg" alt="Image 4">
+ </a>
+ </div>
+ <!-- Add more images as needed -->
+ </div>
+</body>
+</html>
