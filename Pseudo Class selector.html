@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+ <title>Pseudo class selector</title>
+ <style>
+ button:hover;{
+    background_color:light blue;
+    color:white;
+ }
+ inpur:focus{
+    border:2px solid green;
+ }
+ ul li:first-child{
+    font_weight:bold;
+    color:red;
+ }
+ ul li:nth_child(even){
+    background_color:#f2f2f2;
+ }
+ a:visited{
+    color:purple;
+ }
+ </style>
+</head>
+<body>
+    <h2> Pseudo class selector Demo</h2>
+    <button> Hover Over me</button>
+    <br> <br>
+    <input type="text" placeholder=" Focus on me">
+    <br> <br>
+    <ul>
+        <li> First item(styled with;first_child);</li>
+        <li> second item </li>
+        <li> Third item </li>
+        <li>fourth item </li>
+        <li> fift item </li>
+    </ul>
+    <br>
+    <a href="https://google.com">visited link exmple</a>
+</body>
+</html>
